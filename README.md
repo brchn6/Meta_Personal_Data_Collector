@@ -2,9 +2,9 @@
 
 **Fuck Meta.**
 
-This tool exists so you can grab every photo you ever uploaded or were tagged in — and then **delete your account and never look back**.
+This tool exists so you can grab every photo you ever uploaded or were tagged in - and then **delete your account and never look back**.
 
-Facebook and Instagram treat us like a regular paycheck. We're not users, we're product. Every scroll, every like, every moment of envy — engineered to keep us hooked so they can sell our attention to the highest bidder. The amount of paid content, the influencer circus, the psychological manipulation of watching everyone have fun while you're just living your own life — it's reached a point where I genuinely can't stand being on their platforms.
+Facebook and Instagram treat us like a regular paycheck. We're not users, we're product. Every scroll, every like, every moment of envy - engineered to keep us hooked so they can sell our attention to the highest bidder. The amount of paid content, the influencer circus, the psychological manipulation of watching everyone have fun while you're just living your own life - it's reached a point where I genuinely can't stand being on their platforms.
 
 It was cool a few years ago. It's not cool anymore.
 
@@ -12,18 +12,18 @@ It was cool a few years ago. It's not cool anymore.
 
 ---
 
-> **Built on the work of [MariyaSha](https://github.com/MariyaSha/WebscrapingFacebook)** —  
+> **Built on the work of [MariyaSha](https://github.com/MariyaSha/WebscrapingFacebook)** -  
 > the original Facebook scraper this project was forked from. Thank you!
 
 ## How it works
 
 1. Opens Brave (or Chrome) via Selenium
 2. Logs into Facebook, visits your `photos_by` and `photos_of` (or all albums)
-3. Scrolls continuously until every photo is loaded — goes back through your entire history
+3. Scrolls continuously until every photo is loaded - goes back through your entire history
 4. Visits each photo page, extracts the full-resolution image URL
 5. Optionally skips profile pictures and cover photos
 6. If Instagram is configured: switches tabs, scrapes both your main feed and tagged photos
-7. Handles Instagram carousels (multi-image posts) — clicks through all slides
+7. Handles Instagram carousels (multi-image posts) - clicks through all slides
 8. Filters out avatars, thumbnails, and "More posts" suggestions by image size
 9. Downloads everything to your chosen directory
 
@@ -100,7 +100,7 @@ SCRAPE_ALL_ALBUMS=false
 
 **Your credentials never leave your machine.**
 
-This tool uses [Selenium](https://www.selenium.dev/) to automate **your own browser** —
+This tool uses [Selenium](https://www.selenium.dev/) to automate **your own browser** -
 it opens Facebook's real login page and types your credentials there, the same way you
 would manually. It does **not**:
 
@@ -113,7 +113,7 @@ When using the web GUI (`streamlit run`), credentials are written to a local
 finishes. When using the CLI (`fb-extract`), credentials are read from `.cred`
 (which is git-ignored) and passed directly to Selenium.
 
-👉 The full source is at `src/fb_image_extractor/` — audit it yourself.
+> The full source is at `src/fb_image_extractor/` - audit it yourself.
 
 ## Development
 

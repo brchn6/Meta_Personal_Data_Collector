@@ -10,20 +10,20 @@ def run():
     st.markdown("Grab your photos, then **delete your account and never look back**.")
 
     # ── Privacy reassurance ──────────────────────────────────────────
-    with st.expander("🔒 Privacy — how your credentials are used", expanded=True):
+    with st.expander("\U0001f512 Privacy - how your credentials are used", expanded=True):
         st.markdown(
             """
             **Your credentials never leave this machine.** Here's exactly what happens:
 
             1. You type your Facebook (and optionally Instagram) login into **this form**.
             2. The script saves them temporarily to a local `.cred_streamlit` file
-               (deleted as soon as the run finishes — see the `finally` block in the code).
+               (deleted as soon as the run finishes - see the `finally` block in the code).
             3. Selenium opens **your own browser** (Brave/Chrome) and types them into
-               **Facebook's own login page** — just as if you typed them yourself.
+               **Facebook's own login page** - just as if you typed them yourself.
             4. No data is sent to any server other than Facebook/Instagram themselves.
                No external API, no phone-home, no tracking.
 
-            👉 The full source is at `src/fb_image_extractor/` — read it, build from it,
+            The full source is at `src/fb_image_extractor/` - read it, build from it,
                or audit the network tab in your browser to verify zero unexpected traffic.
             """
         )
@@ -111,7 +111,7 @@ def run():
 
         total = fb_count + ig_count
         status.update(label=f"✅ Done! Downloaded {total} photos total (FB: {fb_count}, IG: {ig_count})", state="complete", expanded=False)
-        st.success(f"Downloaded {total} photos total — FB: {fb_count}, IG: {ig_count}")
+        st.success(f"Downloaded {total} photos total - FB: {fb_count}, IG: {ig_count}")
         st.balloons()
     except Exception as e:
         status.update(label=f"❌ Error: {e}", state="error", expanded=True)

@@ -129,7 +129,7 @@ class InstagramImageExtractor:
                     f.write(resp.content)
                 count += 1
             except Exception as e:
-                self.log(f"    Failed: {url[:60]} — {e}")
+                self.log(f"    Failed: {url[:60]} - {e}")
         self.log(f"Downloaded {count} Instagram photos to {self.save_dir}")
         return count
 
