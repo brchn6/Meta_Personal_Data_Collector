@@ -3,9 +3,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "fb-image-extractor"
+name = "meta-personal-data-collector"
 version = "0.1.0"
-description = "Extract all your Facebook photos before deleting your account"
+description = "Extract all your photos from Meta platforms, then delete your account"
+
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [

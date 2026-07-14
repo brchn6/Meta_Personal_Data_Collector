@@ -6,8 +6,8 @@ from fb_image_extractor.instagram import InstagramImageExtractor
 
 def run():
     st.set_page_config(page_title="Facebook Image Extractor", page_icon="📸", layout="wide")
-    st.title("📸 Facebook & Instagram Image Extractor")
-    st.markdown("Extract every photo before deleting your accounts.")
+    st.title("🔥 Meta Personal Data Collector")
+    st.markdown("Grab your photos, then **delete your account and never look back**.")
 
     # ── Privacy reassurance ──────────────────────────────────────────
     with st.expander("🔒 Privacy — how your credentials are used", expanded=True):

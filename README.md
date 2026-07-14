@@ -1,7 +1,16 @@
-# Facebook & Instagram Image Extractor
+# 🔥 Meta Personal Data Collector
 
-Extract every photo you've ever uploaded or been tagged in — before you delete your accounts.  
-Downloads your entire photo library (uploaded + tagged) from both Facebook and Instagram.
+**Fuck Meta.**
+
+This tool exists so you can grab every photo you ever uploaded or were tagged in — and then **delete your account and never look back**.
+
+Facebook and Instagram treat us like a regular paycheck. We're not users, we're product. Every scroll, every like, every moment of envy — engineered to keep us hooked so they can sell our attention to the highest bidder. The amount of paid content, the influencer circus, the psychological manipulation of watching everyone have fun while you're just living your own life — it's reached a point where I genuinely can't stand being on their platforms.
+
+It was cool a few years ago. It's not cool anymore.
+
+**Burn it. Flip them off. Leave.**
+
+---
 
 > **Built on the work of [MariyaSha](https://github.com/MariyaSha/WebscrapingFacebook)** —  
 > the original Facebook scraper this project was forked from. Thank you!
