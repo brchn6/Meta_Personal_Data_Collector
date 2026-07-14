@@ -1,7 +1,7 @@
 import streamlit as st
 from pathlib import Path
-from .extractor import FacebookImageExtractor
-from .instagram import InstagramImageExtractor
+from fb_image_extractor.extractor import FacebookImageExtractor
+from fb_image_extractor.instagram import InstagramImageExtractor
 
 
 def run():
@@ -99,3 +99,7 @@ def run():
     finally:
         if cred_path.exists():
             cred_path.unlink()
+
+
+if __name__ == "__main__":
+    run()
