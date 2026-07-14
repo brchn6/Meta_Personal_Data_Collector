@@ -33,7 +33,9 @@ It was cool a few years ago. It's not cool anymore.
 
 1. Download the latest release from the **[Releases](https://github.com/brchn6/Meta_Personal_Data_Collector/releases)** page
 2. Extract the zip
-3. Double-click **`run.sh`**
+3. Double-click the launcher for your OS:
+   - **Windows** — double-click **`run.bat`**
+   - **macOS / Linux** — double-click **`run.sh`**
 
 That's it. It installs everything it needs automatically and opens the app in your browser.
 
