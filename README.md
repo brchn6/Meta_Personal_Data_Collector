@@ -87,6 +87,25 @@ SCRAPE_ALL_ALBUMS=false
 
 `.cred` is git-ignored. Use `.cred.example` as a template.
 
+## 🔒 Privacy
+
+**Your credentials never leave your machine.**
+
+This tool uses [Selenium](https://www.selenium.dev/) to automate **your own browser** —
+it opens Facebook's real login page and types your credentials there, the same way you
+would manually. It does **not**:
+
+- ❌ Send your password to any server besides Facebook/Instagram
+- ❌ Phone home, call any API, or track usage
+- ❌ Store or cache credentials beyond the current run
+
+When using the web GUI (`streamlit run`), credentials are written to a local
+`.cred_streamlit` file and deleted in a `finally` block as soon as the extraction
+finishes. When using the CLI (`fb-extract`), credentials are read from `.cred`
+(which is git-ignored) and passed directly to Selenium.
+
+👉 The full source is at `src/fb_image_extractor/` — audit it yourself.
+
 ## Development
 
 ```bash

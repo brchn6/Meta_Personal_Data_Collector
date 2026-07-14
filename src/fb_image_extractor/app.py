@@ -9,6 +9,26 @@ def run():
     st.title("📸 Facebook & Instagram Image Extractor")
     st.markdown("Extract every photo before deleting your accounts.")
 
+    # ── Privacy reassurance ──────────────────────────────────────────
+    with st.expander("🔒 Privacy — how your credentials are used", expanded=True):
+        st.markdown(
+            """
+            **Your credentials never leave this machine.** Here's exactly what happens:
+
+            1. You type your Facebook (and optionally Instagram) login into **this form**.
+            2. The script saves them temporarily to a local `.cred_streamlit` file
+               (deleted as soon as the run finishes — see the `finally` block in the code).
+            3. Selenium opens **your own browser** (Brave/Chrome) and types them into
+               **Facebook's own login page** — just as if you typed them yourself.
+            4. No data is sent to any server other than Facebook/Instagram themselves.
+               No external API, no phone-home, no tracking.
+
+            👉 The full source is at `src/fb_image_extractor/` — read it, build from it,
+               or audit the network tab in your browser to verify zero unexpected traffic.
+            """
+        )
+    # ─────────────────────────────────────────────────────────────────
+
     with st.sidebar:
         st.header("Facebook")
         fb_username = st.text_input("FB email / username", key="fb_user")
