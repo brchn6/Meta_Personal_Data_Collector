@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fb-image-extractor"
+version = "0.1.0"
+description = "Extract all your Facebook photos before deleting your account"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "selenium>=4.0",
+    "webdriver-manager",
+    "python-dotenv>=1.0",
+    "requests>=2.28",
+    "streamlit>=1.35",
+]
+
+[project.scripts]
+fb-extract = "fb_image_extractor.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fb_image_extractor"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]

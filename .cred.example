@@ -1,0 +1,11 @@
+# Rename this file to .cred and fill in your details.
+#
+# Required:
+FB_USERNAME=your_email@example.com
+FB_PASSWORD=your_password
+FB_PROFILE=your_profile_name          # e.g. "goldie.may.750" or "BarCo840"
+
+# Optional:
+SAVE_DIR=./downloaded_photos           # where to save Facebook photos
+SKIP_PROFILE_COVER=true                # skip profile picture and cover photos
+SCRAPE_ALL_ALBUMS=false                # scrape every album, not just photos_by/photos_of

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.venv/
+uv.lock
+.cred
+*.ipynb
+chat_gpt_handoff.md
+FB_SCRAPED/
+.gstack/
