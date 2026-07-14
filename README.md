@@ -29,7 +29,17 @@ It was cool a few years ago. It's not cool anymore.
 
 ## Quick start
 
-### 1. Install
+### 🖱️ One-click launcher (easiest — no terminal needed)
+
+1. Download the latest release from the **[Releases](https://github.com/brchn6/Meta_Personal_Data_Collector/releases)** page
+2. Extract the zip
+3. Double-click **`run.sh`**
+
+That's it. It installs everything it needs automatically and opens the app in your browser.
+
+### Or, from the command line
+
+#### 1. Install
 
 ```bash
 uv sync
@@ -37,14 +47,14 @@ uv sync
 
 Installs all dependencies in one shot (Selenium, Streamlit, requests, etc.).
 
-### 2. Set up credentials
+#### 2. Set up credentials
 
 ```bash
 cp .cred.example .cred
 # Then edit .cred with your Facebook login details
 ```
 
-### 3. Run
+#### 3. Run
 
 **Command line (recommended):**
 
