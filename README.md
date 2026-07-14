@@ -1,4 +1,4 @@
-# 🔥 Meta Personal Data Collector
+# Meta Personal Data Collector
 
 **Fuck Meta.**
 
