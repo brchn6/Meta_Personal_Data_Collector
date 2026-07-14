@@ -10,3 +10,4 @@ uv.lock
 chat_gpt_handoff.md
 FB_SCRAPED/
 .gstack/
+.pytest_cache/
